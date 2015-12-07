@@ -1,0 +1,16 @@
+mixin goods(type, num)
+
+    case type
+      when 'large'
+        .goods__item-wrapper-large
+          .goods__item-large
+            img(alt="goods", src='static/img/assets/goods/#{goods.large[num].img}.jpg').goods__item-large-img
+            .goods__item-large-text #{goods.large[num].text}
+      when 'litle'
+        .goods__item-wrapper-litle
+          - for (var x = 1; x < 5; x++)
+            .goods__item-litle
+              img(alt="goods", src='static/img/assets/goods/#{goods.litle[num][x].img}.jpg').goods__item-litle-img
+              .goods__item-litle-text #{goods.litle[num][x].text}
+      default
+        p unknown item type

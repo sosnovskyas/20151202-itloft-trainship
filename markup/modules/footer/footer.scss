@@ -1,0 +1,111 @@
+.footer{
+  background-color: #555;
+  &__wrapper{
+    @include cf;
+    @extend .page-wrapper;
+    margin-bottom: 27px;
+  }
+
+  &__logo{
+    float: left;
+    padding-top: 32px;
+    padding-left: 9px;
+
+    margin-right: 126px;
+  }
+
+  &__catigories{
+    float: left;
+
+    color: #fff;
+    font-family: 'HarmoniaSansProCyr-Light', sans-serif;
+    font-size: 14px;
+
+    &-list{
+      list-style: none;
+      margin: 0;
+      padding: 31px 39px 0 0;
+    }
+
+    &-item{
+      margin-bottom: 4px;
+    }
+
+    &-link{
+      font-family: 'HarmoniaSansProCyr-Light', sans-serif;
+      font-size: 14px;
+      color: #fff;
+      text-decoration: none;
+
+      &:hover{
+        color: #ee7c00;
+        cursor: pointer;
+      }
+    }
+  }
+  &__right{
+    float: right;
+  }
+
+  &__search{
+    text-align: right;
+
+    padding-top: 23px;
+    margin-bottom: 36px;
+
+    &-input{
+      font-family: 'HarmoniaSansProCyr-Light', sans-serif;
+      font-size: 14px;
+
+      width: 360px;
+
+      padding: 11px;
+    }
+  }
+  &__contacts{
+    text-align: right;
+    margin-bottom: 6px;
+    &-address{
+      font-family: 'HarmoniaSansProCyr-Light', sans-serif;
+      font-size: 14px;
+    }
+    &-phone{
+      margin-right: 14px;
+    }
+    &-pipe{
+      border: 1px solid #636363;
+      width: 432px;
+    }
+  }
+  &__menu{
+    font-family: 'HarmoniaSansProCyr-Light', sans-serif;
+    font-size: 14px;
+
+    text-align: right;
+    &-list{
+      list-style: none;
+      margin: 0;
+    }
+
+    &-item{
+      display: inline-block;
+      padding: 5px;
+      margin-left: 36px;
+    }
+  }
+
+  &__copyright{
+    @extend .page-wrapper;
+
+    &-wrapper{
+      font-family: 'HarmoniaSansProCyr-Light', sans-serif;
+      font-size: 14px;
+      color: #959595;
+      text-decoration: underline;
+
+      padding: 13px 0;
+
+      background-color: #464646;
+    }
+  }
+}

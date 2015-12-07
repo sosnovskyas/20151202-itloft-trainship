@@ -1,0 +1,137 @@
+.menu{
+  color: #fff;
+  @include cf;
+  background-color: rgb(85, 85, 85);
+  background-color: rgba(85, 85, 85, .5);
+  &__logo{
+    text-align: center;
+    padding: 7px 0 0 23px;
+    width: 100px;
+    &-text{
+    }
+  }
+  &:hover{
+    .menu__list{
+      display: block;
+    }
+    .menu__title-content{
+      display: none;
+    }
+    .menu__right-top{
+      padding-bottom: 22px;
+    }
+    .menu__logo-image{
+      content: url('/static/img/general/logo-hover.png');
+    }
+  }
+
+  &__left{
+    float: left;
+  }
+  &__right{
+    float: right;
+    @include cf;
+    &-top{
+      float: right;
+      padding: 30px;
+      .menu{
+        &__title{
+        margin-right: 10px;
+          &-image{
+            border-bottom: 10px double #fff;
+            border-top: 3px solid #fff;
+            content: '';
+            height: 3px;
+            width: 19px;
+            float: right;
+          }
+        }
+        &__phone{
+          float: left;
+          margin-right: 22px;
+        }
+      }
+    }
+    &-bottom{
+      @include cf;
+    }
+  }
+
+  &__list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    &-item{
+      float: left;
+      padding: 9px;
+      font-family: helveticaneuecyr, sans-serif;
+      &_search{
+        width: 19px;
+        height: 20px;
+
+        background-image: url('../../static/img/general/' + 'search.png');
+        background-position: 0 8px;
+        background-repeat: no-repeat;
+      }
+
+      &_cart{
+        font-family: 'HarmoniaSansProCyr-Light', sans-serif;
+        font-size: 14px;
+
+        background-color: #e1e1e1;
+        margin: 0;
+        height: 20px;
+        &-sound{
+          background-image: url('../../static/img/general/' + 'sound.png');
+          background-repeat: no-repeat;
+          background-position: 11px 12px;
+          background-color: #c3c2c2;
+          width: 19px;
+        }
+        &-price{
+
+        }
+        &-count{
+          padding: 9px 0;
+        }
+        &-pipe{
+          border-left: #c3c2c2 1px solid;
+          height: 20px;
+        }
+        &-basket{
+          background-image: url('../../static/img/general/' + 'basket.png');
+          background-repeat: no-repeat;
+          background-position: 11px 10px;
+          width: 27px;
+        }
+      }
+      
+      &_pipe{
+        border-left: #c3c2c2 1px solid;
+        height: 9px;
+        margin: 5px 0;
+      }
+      &_text{
+        &:hover a{
+          text-decoration: underline;
+        }
+        a{
+          padding: 9px 10px;
+          margin-right: 10px;
+          font-family: helveticaneuecyr, sans-serif;
+          font-size: 18px;
+          color: #fff;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  &__title{
+    float: left;
+    width: 50px;
+  }
+  &__list{
+    float: right;
+  }
+}

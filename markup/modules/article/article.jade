@@ -1,0 +1,6 @@
+mixin article(num)
+  .article__item
+    .article__item-image-wrapper
+      img(alt='article image', src='static/img/assets/article/#{article[num].img}.jpg').article__item-image
+    .article__item-date #{article[num].date}
+    .article__item-title #{article[num].title}

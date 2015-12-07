@@ -1,0 +1,15 @@
+# humanstxt.org/
+# The humans responsible & technologies
+
+# TEAM
+
+    Sosnovsky Alexey -- Front-end developer
+
+# THANKS
+
+    itloft
+
+# TECHNOLOGIES
+
+    HTML5, CSS3, JS
+    

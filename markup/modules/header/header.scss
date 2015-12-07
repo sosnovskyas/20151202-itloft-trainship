@@ -1,0 +1,19 @@
+.header{
+  height: 800px;
+  background-image: url($img-general + 'header-bg.jpg');
+  background-position: 0 0;
+  background-size: 1296px;
+  position: relative;
+  &__text{
+    font-family: 'HarmoniaSansProCyr-Light', sans-serif;
+    font-size: 36px;
+
+    position: absolute;
+    top: 386px;
+    left: 166px;
+
+    &_medium{
+      font-family: 'HelveticaNeueCyr-Medium', sans-serif;
+    }
+  }
+}

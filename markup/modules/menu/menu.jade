@@ -1,0 +1,26 @@
+mixin menu(data)
+  .menu
+    .menu__left
+      .menu__logo
+        img(src='/static/img/general/logo.png', alt='logo').menu__logo-image
+    .menu__right
+      .menu__right-top
+        .menu__phone 8 800 30 50 80
+        .menu__title
+          .menu__title-content Меню
+        .menu__title-image
+      .menu__right-bottom
+        ul.menu__list
+          li.menu__list-item.menu__list-item_text: a(href='#') Мебель
+          li.menu__list-item.menu__list-item_text: a(href='#') Свет
+          li.menu__list-item.menu__list-item_text: a(href='#') Статьи
+          li.menu__list-item.menu__list-item_text: a(href='#') О компении
+          li.menu__list-item.menu__list-item_text: a(href='#') Контакты
+          li.menu__list-item.menu__list-item_pipe
+          li.menu__list-item.menu__list-item_search
+          li.menu__list-item.menu__list-item_cart.menu__list-item_cart-basket
+          li.menu__list-item.menu__list-item_cart.menu__list-item_cart-count 15
+          li.menu__list-item.menu__list-item_cart
+            .menu__list-item_cart-pipe
+          li.menu__list-item.menu__list-item_cart.menu__list-item_cart-price 230 800 р.
+          li.menu__list-item.menu__list-item_cart.menu__list-item_cart-sound

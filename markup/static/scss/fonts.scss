@@ -1,0 +1,64 @@
+/* Your custom fonts here */
+
+/* Example
+
+@font-face {
+    font-family: 'CustomFont';
+    src: url('../fonts/Custom-Font.eot');
+    src: url('../fonts/Custom-Font.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Custom-Font.woff') format('woff'),
+         url('../fonts/Custom-Font.svg#custom_font') format('svg');
+    font-weight: 400;       // For normal width. It could has another value   
+    font-style: normal;     // Also could has another value
+    }
+
+
+// Var for using custom font
+$CustomFont: 'CustomFont', Helvetica, Arial, sans-serif;
+*/
+
+@font-face {
+  font-family: 'helveticaneuecyr';
+  src: url('../fonts/helveticaneuecyr-roman-webfont.eot');
+  src: url('../fonts/helveticaneuecyr-roman-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/helveticaneuecyr-roman-webfont.woff2') format('woff2'),
+  url('../fonts/helveticaneuecyr-roman-webfont.woff') format('woff'),
+  url('../fonts/helveticaneuecyr-roman-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'HarmoniaSansProCyr-Light';
+  src: url('../fonts/helveticaneuecyr-light-webfont.eot');
+  src: url('../fonts/helveticaneuecyr-light-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/helveticaneuecyr-light-webfont.woff2') format('woff2'),
+  url('../fonts/helveticaneuecyr-light-webfont.woff') format('woff'),
+  url('../fonts/helveticaneuecyr-light-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'anahit-regular';
+  src: url('../fonts/anahit-regular.eot');
+  src: url('../fonts/anahit-regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/anahit-regular.woff') format('woff'),
+  url('../fonts/anahit-regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+
+}
+@font-face {
+  font-family: 'HelveticaNeueCyr-Medium';
+  src: url('../fonts/helveticaneuecyr-medium-webfont.eot');
+  src: url('../fonts/helveticaneuecyr-medium-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/helveticaneuecyr-medium-webfont.woff2') format('woff2'),
+  url('../fonts/helveticaneuecyr-medium-webfont.woff') format('woff'),
+  url('../fonts/helveticaneuecyr-medium-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+
+}

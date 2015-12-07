@@ -1,0 +1,69 @@
+// Common styles of the project
+.placeholdr{
+  // for placeholder polyfill working
+  color: gray;
+}
+html, body {
+  height: 100%;
+  min-width: 960px;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.page-wrapper{
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.goods{
+  @extend .page-wrapper;
+  @include cf;
+  margin-top: 10px;
+  margin-bottom: 96px;
+}
+
+.articles{
+  @extend .page-wrapper;
+  @include cf;
+  &__header{
+    line-height: 0.5;
+    text-align: center;
+
+    margin-bottom: 71px;
+    
+    span{
+      font-family: 'anahit-regular', sans-serif;
+      font-size: 48px;
+      color: #464646;
+
+      display: inline-block;
+      position: relative;
+
+      &:before,
+      &:after{
+        content: '';
+        position: absolute;
+        height: 2px;
+        border-bottom: 1px solid black;
+        border-top: 1px solid black;
+        top: 10px;
+        width: 237px;
+      }
+
+      &:before{
+        right: 100%;
+        margin-right: 25px;
+      }
+      &:after{
+        left: 100%;
+        margin-left: 25px;
+      }
+    }
+  }
+  &__wrapper{
+    //width: (140*2)+580px;
+    margin: 0 auto;
+    margin-left: 188px;
+    margin-bottom: 31px;
+  }
+}

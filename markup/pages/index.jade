@@ -1,0 +1,61 @@
+doctype html
+|<!--[if IE 7]><html class="ie7 lt-ie10 lt-ie9 lt-ie8 no-js" lang="ru"><![endif]-->
+|<!--[if IE 8]><html class="ie8 lt-ie10 lt-ie9 no-js" lang="ru"><![endif]-->
+|<!--[if IE 9 ]><html class="ie9 lt-ie10 no-js" lang="ru"><![endif]-->
+|<!--[if (gt IE 9)|!(IE)]><!--><html class="no-js" lang="ru"><!--<![endif]-->
+
+include ../modules/head/head
+include ../modules/header/header
+include ../modules/menu/menu
+include ../modules/goods/goods
+include ../modules/article/article
+include ../modules/footer/footer
+
+head
+    +head(head.defaults)
+body
+  +header
+  section.goods
+    +goods('large', 1)
+    +goods('litle', 1)
+    +goods('litle', 2)
+    +goods('large', 2)
+    +goods('large', 3)
+    +goods('litle', 3)
+  section.articles
+    p.articles__header
+     span Полезные статьи
+    .articles__wrapper
+      +article(1)
+      +article(2)
+      +article(3)
+      +article(4)
+  +footer
+  script(src='%=staticPrefix=%js/main%=hash=%%=min=%.js')
+  <!--[if IE 9]>
+  script.
+    (function setPlaceHolders() {
+      var input = document.getElementsByTagName('input'); // get all text fields
+      var cls = "placeholdr"; // set name of the class
+      if (input) { // if fields found
+        for (var i = 0; i < input.length; i++) {
+          var t = input[i];
+          var txt = t.getAttribute("placeholder");
+          if (txt.length > 0) { // if placeholder found
+            t.className = t.value.length == 0 ? t.className + " " + cls : t.className; // add class
+            t.value = t.value.length > 0 ? t.value : txt; // if no value found
+            t.onfocus = function () { // on focus
+              this.className = this.className.replace(cls);
+              this.value = this.value == this.getAttribute("placeholder") ? "" : this.value;
+            };
+            t.onblur = function () { // on focus out
+              if (this.value.length == 0) {
+                this.value = this.getAttribute("placeholder");
+                this.className = this.className + " " + cls; // add class
+              }
+            }
+          }
+        }
+      }
+    }());
+  <![endif]-->
